@@ -36,7 +36,7 @@
         <div id="main" class="wrapper style1">
           <div class="container">
             <header class="major">
-              <h2>Scholarships</h2>
+              <h2>Application Form</h2>
               
             </header>
             
@@ -47,29 +47,9 @@
                   <p id="notice"><%= notice %></p>
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Provider</th>
-      <th>Due</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<%= render 'form' %>
 
-  <tbody>
-    <% @scholars.each do |scholar| %>
-     <tr>
-        <td><%= scholar.Name %></td>
-        <td><%= scholar.Description %></td>
-        <td><%= scholar.Provider %></td>
-        <td><%= scholar.Due %></td>
-        <td><a href="/students/new">Apply</a></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= link_to 'Back', students_path %>
 
 <br>
 
@@ -95,3 +75,4 @@
 
   </body>
 </html>
+

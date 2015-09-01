@@ -1,5 +1,80 @@
-<h1>New Test</h1>
+
+<!DOCTYPE HTML>
+<!--
+  Landed by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Scholarships</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%= stylesheet_link_tag    "scholarship", :media => "all" %>
+    
+  </head>
+  <body>
+    <div id="page-wrapper">
+
+      <!-- Header -->
+        <header id="header">
+          
+          <nav id="nav">
+            <ul>
+              <li><a href="/scholars">Scholarship</a></li>
+              <li><a href="/tests">Test </a></li>
+              <li><a href="syllabus.html">Syllabus</a></li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li><a href="/users/sign_up" class="button special">Sign Up</a></li>
+            </ul>
+          </nav>
+        </header>
+
+      <!-- Main -->
+        <div id="main" class="wrapper style1">
+          <div class="container">
+            <header class="major">
+              <h2>Add Questions</h2>
+              
+            </header>
+            
+              
+              <div class="8u$ 12u$(medium) important(medium)">
+
+                <!-- Content -->
+                  <p id="notice"><%= notice %></p>
+
 
 <%= render 'form' %>
 
 <%= link_to 'Back', tests_path %>
+
+<br>
+
+
+              
+            
+          </div>
+        </div>
+
+      
+
+    </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
+
+
+

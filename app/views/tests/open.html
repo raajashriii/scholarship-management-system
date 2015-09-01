@@ -36,7 +36,7 @@
         <div id="main" class="wrapper style1">
           <div class="container">
             <header class="major">
-              <h2>Scholarships</h2>
+              <h2>Test</h2>
               
             </header>
             
@@ -44,37 +44,33 @@
               <div class="8u$ 12u$(medium) important(medium)">
 
                 <!-- Content -->
-                  <p id="notice"><%= notice %></p>
-
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Provider</th>
-      <th>Due</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @scholars.each do |scholar| %>
-     <tr>
-        <td><%= scholar.Name %></td>
-        <td><%= scholar.Description %></td>
-        <td><%= scholar.Provider %></td>
-        <td><%= scholar.Due %></td>
-        <td><a href="/students/new">Apply</a></td>
-      </tr>
+                  
+                 <% @tests.each do |student| %>
+        <h3><%= student.question %></h3>
+        <%= radio_button_tag(:op4, "child") %>
+        <%= label_tag(:op1, "") %>
+        <%= student.op1 %><br><br>
+        <%= radio_button_tag(:op4, "child") %>
+        <%= label_tag(:op1, "") %>
+        <%= student.op2 %><br><br>
+        <%= radio_button_tag(:op4, "child") %>
+        <%= label_tag(:op1, "") %>
+        <%= student.op3 %><br><br>
+        <%= radio_button_tag(:op4, "child") %>
+        <%= label_tag(:op1, "") %>
+        <%= student.op4 %><br><br>
+        
+    
     <% end %>
-  </tbody>
-</table>
+    
 
+
+<span class="button special"><%= link_to 'submit', new_test_path %></span>
 <br>
 
+        
 
-              
+            
             
           </div>
         </div>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  DOB:  MyString
+  community: MyString
+  income:  MyString
+  cgpa: 1.5
+  phone:  MyString
+  email: MyString
+
+two:
+  Name: MyString
+  DOB: 2015-08-26
+  community: MyString
+  income:  MyString
+  cgpa: 1.5
+  phone:  MyString
+  email: MyString
